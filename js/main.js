@@ -44,5 +44,11 @@ dweetio.listen_for(DWEET_CHANNEL, function(dweet){
 
   fillWithParams(params);
 
-  window.print();
+  if(window.location.hash.indexOf("no") > -1 && window.location.hash.indexOf("print") > -1) {
+    console.log('suppressed print')
+  }
+  else {
+    window.print();
+  }
+
 });
