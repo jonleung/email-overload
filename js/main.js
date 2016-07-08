@@ -42,6 +42,8 @@ dweetio.listen_for(DWEET_CHANNEL, function(dweet){
     "eo-to-email": "jjleung137@gmail.com"
   }
 
+  console.log(params);
+
   fillWithParams(params);
 
   if(window.location.hash.indexOf("no") > -1 && window.location.hash.indexOf("print") > -1) {
