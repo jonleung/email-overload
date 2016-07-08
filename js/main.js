@@ -1,5 +1,5 @@
 // https://dweet.io/dweet/for/email-overload
-var DWEET_CHANNEL = "email-overload";
+var DWEET_CHANNEL = "email-overload-2";
 
 console.log("dweet is listening on channel '" + DWEET_CHANNEL + "'");
 
