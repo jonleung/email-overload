@@ -1,6 +1,8 @@
 // https://dweet.io/dweet/for/email-overload
 var DWEET_CHANNEL = "email-overload-2";
 
+var newMailSound = new Audio("new_mail.mp3");
+
 console.log("dweet is listening on channel '" + DWEET_CHANNEL + "'");
 
 function fill(klass, value) {
@@ -28,6 +30,8 @@ var defaultParams = {
 fillWithParams(defaultParams);
 
 dweetio.listen_for(DWEET_CHANNEL, function(dweet){
+  newMailSound.play();
+  
   var email = dweet.content;
 
   var date = new Date(email.Date);
